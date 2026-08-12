@@ -8,9 +8,3 @@ body{
     overflow-y: hidden;
 }
 
-.contents{
-    padding: 10px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}

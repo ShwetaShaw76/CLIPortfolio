@@ -42,6 +42,9 @@ function Contents(){
   return(
     <div className="contents">
         <h1>{txt}</h1>
+        <p><div id="wht">//</div> I am a <div id='age'>16</div> years old <div id='grn'>front-end web developer</div> and am interested in <div id='grn'>game-dev</div> <div id="wht">//</div></p>
+        <p><div id="wht">/*</div> I am from India and my favourite late night snack is <div id='yellow'>cheese-pizza</div> <div id="wht">*/</div></p>
+        <p><div id="wht">///</div> I am always eager to learn something new and a huge <div id='red'>#pokemon fan</div> <div id="wht">///</div></p>
       </div>
   )
 }

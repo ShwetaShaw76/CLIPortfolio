@@ -45,3 +45,50 @@
   transform: scaleX(1);
 }
 
+.contents{
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.contents h{
+    font-size: 2rem;
+    gap: 2px;
+}
+
+.contents p{
+    margin-bottom: 2px;
+    padding: 2px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.contents p #age{
+  color: cyan;
+  font-weight: 900;
+}
+
+.contents p #grn{
+  color: lightgreen;
+  font-weight: 900;
+}
+
+.contents p #yellow{
+  color: yellow;
+  font-weight: 900;
+}
+
+.contents p #red{
+  color: lightcoral;
+  font-weight: 900;
+}
+
+.contents p #wht{
+    color: white;
+  font-weight: 900;
+}
