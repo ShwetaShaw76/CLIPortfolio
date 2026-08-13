@@ -92,3 +92,23 @@
     color: white;
   font-weight: 900;
 }
+
+.togepi-wrap {
+  display: flex;
+  
+  padding: 10px 0 20px;
+}
+
+.togepi-img {
+  display: flex;
+  width: min(320px, 70vw);
+  height: auto;
+  max-width: 100%;
+  filter: drop-shadow(0 0 18px rgba(255, 154, 0, 0.35));
+}
+
+.uppersec{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}

@@ -2,6 +2,7 @@
 import './App.css'
 import { useEffect, useState } from 'react'
 import togepi from './assets/togepi.svg'
+import Projects from './Projects.jsx'
 
 function Header(){
 
@@ -53,7 +54,9 @@ function Contents(){
 function TogepiImg(){
 
   return(
-    <img src={togepi} alt="Togepi" className="togepi-img"/>
+    <div className="togepi-wrap">
+      <img src={togepi} alt="Togepi" className="togepi-img"/>
+    </div>
   )
 
 }
@@ -63,8 +66,11 @@ function App() {
   return (
     <>
       <Header></Header>
+      <div className="uppersec">
       <Contents></Contents>
-      <TogepiImg /> 
+      <TogepiImg />
+      </div>
+      <Projects></Projects>
     </>
   )
 }
