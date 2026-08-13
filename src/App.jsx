@@ -1,6 +1,7 @@
 
 import './App.css'
 import { useEffect, useState } from 'react'
+import togepi from './assets/togepi.svg'
 
 function Header(){
 
@@ -42,11 +43,19 @@ function Contents(){
   return(
     <div className="contents">
         <h1>{txt}</h1>
-        <p><div id="wht">//</div> I am a <div id='age'>16</div> years old <div id='grn'>front-end web developer</div> and am interested in <div id='grn'>game-dev</div> <div id="wht">//</div></p>
-        <p><div id="wht">/*</div> I am from India and my favourite late night snack is <div id='yellow'>cheese-pizza</div> <div id="wht">*/</div></p>
-        <p><div id="wht">///</div> I am always eager to learn something new and a huge <div id='red'>#pokemon fan</div> <div id="wht">///</div></p>
+        <div><p id="wht">//</p> I am a <p id='age'>16</p> years old <p id='grn'>front-end web developer</p> and am interested in <p id='grn'>game-dev</p> <p id="wht">//</p></div>
+        <div><p id="wht">/*</p> I am from India and my favourite late night snack is <p id='yellow'>cheese-pizza</p> <p id="wht">*/</p></div>
+        <div><p id="wht">///</p> I am always eager to learn something new and a huge <p id='red'>#pokemon fan</p> <p id="wht">///</p></div>
       </div>
   )
+}
+
+function TogepiImg(){
+
+  return(
+    <img src={togepi} alt="Togepi" className="togepi-img"/>
+  )
+
 }
 
 function App() {
@@ -55,6 +64,7 @@ function App() {
     <>
       <Header></Header>
       <Contents></Contents>
+      <TogepiImg /> 
     </>
   )
 }

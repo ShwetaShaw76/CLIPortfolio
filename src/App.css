@@ -58,7 +58,7 @@
     gap: 2px;
 }
 
-.contents p{
+.contents div{
     margin-bottom: 2px;
     padding: 2px;
     font-size: 1.1rem;
@@ -68,27 +68,27 @@
     align-items: center;
 }
 
-.contents p #age{
+.contents div #age{
   color: cyan;
   font-weight: 900;
 }
 
-.contents p #grn{
+.contents div #grn{
   color: lightgreen;
   font-weight: 900;
 }
 
-.contents p #yellow{
+.contents div #yellow{
   color: yellow;
   font-weight: 900;
 }
 
-.contents p #red{
+.contents div #red{
   color: lightcoral;
   font-weight: 900;
 }
 
-.contents p #wht{
+.contents div #wht{
     color: white;
   font-weight: 900;
 }
