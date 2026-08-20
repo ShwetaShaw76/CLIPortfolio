@@ -10,3 +10,54 @@
     font-size: 2rem;
     gap: 2px;
 }
+
+.cards{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    place-items: center;
+}
+
+.card{
+    padding: 15px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.card img{
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.1);
+    
+}
+
+.card-title{
+    font-size: 1.2rem;
+    margin: 5px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.card-title:hover{
+    text-decoration: underline;
+}

@@ -1,13 +1,19 @@
 import './Project.css'
-import { useEffect, useState } from 'react'
+const ProjectImages = [
+    '/projectImages/CleanItCrew.png',
+    '/projectImages/CorruptionLab.png',
+    '/projectImages/GamingBall.png',
+    '/projectImages/MysticalForest.png',
+    '/projectImages/RhinoRide.png'
+]
+
 
 const ProjectLinks= [
     "https://cleanit-crew.vercel.app/",
     "https://khushi123.itch.io/corruption-lab-web",
     "https://gaming-ball.vercel.app/",
     "https://mystical-forest.vercel.app/",
-    "https://rhino-ride.vercel.app/",
-    "https://turquoise-os.vercel.app/"
+    "https://rhino-ride.vercel.app/"
 ]
 
 const githubLinks= [
@@ -15,8 +21,7 @@ const githubLinks= [
     "https://github.com/ShwetaShaw76/CorruptionLab",
     "https://github.com/ShwetaShaw76/GamingBall",
     "https://github.com/ShwetaShaw76/mystical-forest",
-    "https://github.com/ShwetaShaw76/RhinoRide",
-    "https://github.com/ShwetaShaw76/TurquoiseOs"
+    "https://github.com/ShwetaShaw76/RhinoRide"
 ]
 
 const ProjectNames = [
@@ -24,8 +29,7 @@ const ProjectNames = [
     "Corruption Lab",
     "Gaming Ball",
     "Mystical Forest",
-    "Rhino Ride",
-    "Turquoise OS"
+    "Rhino Ride"
 ]
 
 function Projects(){
@@ -34,8 +38,18 @@ function Projects(){
             <div className="prjct">
             <h1 className="hd2">My Projects</h1>
             <div className="cards">
-                
-            </div>
+                {ProjectImages.map((img,index)=>(
+                    <div className="card" key={index}>
+                        <a href={ProjectLinks[index]} target="_blank">
+                        <img src={img} alt={ProjectNames[index]} className="card-img"/>
+                        </a>
+                        <a href={githubLinks[index]} target="_blank">
+                        <h2 className="card-title">{ProjectNames[index]}</h2>
+                        </a>
+                    </div>
+                ))}
+
+                </div>
             </div>
         </>
     )
