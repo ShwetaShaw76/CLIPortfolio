@@ -1,9 +1,10 @@
 .prjct{
     padding: 5px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     margin-left: 15px;
+    align-items: center;
 }
 
 .hd2{
@@ -12,13 +13,46 @@
 }
 
 .cards{
+    margin-top: 30px;
     display:grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto auto auto;
     gap: 5px;
     place-items: center;
+    width: 90%;
+    display:none;
+}
+
+.card[id="0"]{
+    transform: rotate(-36deg);
+    z-index:3;
+    top:40%;
+}
+
+.card[id="1"]{
+    transform: rotate(-18deg);
+    z-index:4;
+    top:10%;
+}
+
+.card[id="2"]{
+    transform: rotate(0deg);
+    z-index:5;
+}
+
+.card[id="3"]{
+    transform: rotate(18deg);
+    z-index:4;
+    top:10%;
+}
+
+.card[id="4"]{
+    transform: rotate(36deg);
+    z-index:3;
+    top:40%;
 }
 
 .card{
+    position: relative;
     padding: 15px;
     width: auto;
     height: auto;
@@ -31,6 +65,8 @@
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #29373a;
 }
 
 .card img{
@@ -45,11 +81,28 @@
 }
 
 .card:hover{
-    transform: scale(1.03);
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0,0,0,0.1);
-    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.card[id="0"]:hover{
+    transform: scale(1.05) rotate(-36deg);
+}
+
+.card[id="1"]:hover{
+    transform: scale(1.05) rotate(-18deg);
+}
+
+.card[id="2"]:hover{
+    transform: scale(1.05) rotate(0deg);
+}
+
+.card[id="3"]:hover{
+    transform: scale(1.05) rotate(18deg);
+}
+
+.card[id="4"]:hover{
+    transform: scale(1.05) rotate(36deg);
 }
 
 .card-title{
@@ -58,6 +111,47 @@
     transition: color 0.3s ease-in-out;
 }
 
-.card-title:hover{
-    text-decoration: underline;
+.mail{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    margin-top: 100px;
 }
+
+.mail-t{
+    position: relative;
+    border-top:100px solid whitesmoke;
+    border-left:250px solid transparent;
+    border-right:250px solid transparent;
+    left: 74vh;
+    top:3px;
+}
+
+.mail-b{
+    position: relative;
+    border-bottom:100px solid whitesmoke;
+    border-left:250px solid transparent;
+    border-right:250px solid transparent;
+    top: 17px;
+    left: 6vh;
+}
+
+.mail-r{
+    position: relative;
+    border-right:250px solid whitesmoke;
+    border-top:100px solid transparent;
+    border-bottom:100px solid transparent;
+    left:-25vh;
+    top: 10px;
+}
+
+.mail-l{
+    position: relative;
+    border-left:250px solid whitesmoke;
+    border-top:100px solid transparent;
+    border-bottom:100px solid transparent;
+    top:10px;
+    left:-100vh;
+}
+
+

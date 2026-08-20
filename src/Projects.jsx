@@ -39,7 +39,7 @@ function Projects(){
             <h1 className="hd2">My Projects</h1>
             <div className="cards">
                 {ProjectImages.map((img,index)=>(
-                    <div className="card" key={index}>
+                    <div className="card" id={index}>
                         <a href={ProjectLinks[index]} target="_blank">
                         <img src={img} alt={ProjectNames[index]} className="card-img"/>
                         </a>
@@ -50,7 +50,14 @@ function Projects(){
                 ))}
 
                 </div>
+                <div className="mail">
+                <span className="mail-t"></span>
+                <span className="mail-b"></span>
+                <span className="mail-r"></span>
+                <span className="mail-l"></span>
+                </div>
             </div>
+            
         </>
     )
 }
