@@ -1,4 +1,5 @@
 import './Project.css'
+import { useState } from 'react'
 const ProjectImages = [
     '/projectImages/CleanItCrew.png',
     '/projectImages/CorruptionLab.png',
@@ -33,13 +34,17 @@ const ProjectNames = [
 ]
 
 function Projects(){
+    const [isOpen, setIsOpen] = useState(false);
     return(
         <>
             <div className="prjct">
             <h1 className="hd2">My Projects</h1>
+            <div className={`envelope ${isOpen ? 'is-open' : ''}`}>
+
+                <div className="mailBack"></div>
             <div className="cards">
                 {ProjectImages.map((img,index)=>(
-                    <div className="card" id={index}>
+                    <div className="card" id={index} key={index}>
                         <a href={ProjectLinks[index]} target="_blank">
                         <img src={img} alt={ProjectNames[index]} className="card-img"/>
                         </a>
@@ -50,12 +55,13 @@ function Projects(){
                 ))}
 
                 </div>
-                <div className="mail">
+                <div className="mail-front" onClick={()=>setIsOpen(!isOpen)}>
                 <span className="mail-t"></span>
                 <span className="mail-b"></span>
                 <span className="mail-r"></span>
                 <span className="mail-l"></span>
                 </div>
+            </div>
             </div>
             
         </>
