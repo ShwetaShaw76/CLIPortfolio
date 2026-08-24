@@ -58,6 +58,11 @@
     gap: 2px;
 }
 
+.hdref{
+  text-decoration: none;
+  color: inherit;
+}
+
 .txt1{
     margin-bottom: 2px;
     padding: 2px;

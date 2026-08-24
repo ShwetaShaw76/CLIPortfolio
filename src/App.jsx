@@ -10,9 +10,9 @@ function Header(){
 return(
     <>
       <header className='hd'>
-        <p>About me</p>
-        <p>Projects</p>
-        <p>CLI Interface</p>
+        <p><a href="#cnt" className='hdref'>About me</a></p>
+        <p><a href="#prjct" className='hdref'>Projects</a></p>
+        <p><a href="#cli" className='hdref'>CLI Interface</a></p>
       </header>
     </>
   )
@@ -68,11 +68,11 @@ function App() {
     <>
       <Header></Header>
       <div className="uppersec">
-      <Contents></Contents>
+      <div id="cnt"><Contents></Contents></div>
       <TogepiImg />
       </div>
-      <Projects></Projects>
-      <CLI></CLI>
+      <div id="prjct"><Projects></Projects></div>
+      <div id="cli"><CLI></CLI></div>
     </>
   )
 }
