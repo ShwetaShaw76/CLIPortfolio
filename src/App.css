@@ -58,12 +58,12 @@
     gap: 2px;
 }
 
-.contents div{
+.txt1{
     margin-bottom: 2px;
     padding: 2px;
-    font-size: 1.1rem;
-    display: flex;
-    flex-direction: row;
+    font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+    line-height: 1.6;
+    word-break: break-word;
     gap: 5px;
     align-items: center;
 }

@@ -44,9 +44,9 @@ function Contents(){
   return(
     <div className="contents">
         <h1>{txt}</h1>
-        <div><p id="wht">//</p> I am a <p id='age'>16</p> years old <p id='grn'>front-end web developer</p> and am interested in <p id='grn'>game-dev</p> <p id="wht">//</p></div>
-        <div><p id="wht">/*</p> I am from India and my favourite late night snack is <p id='yellow'>cheese-pizza</p> <p id="wht">*/</p></div>
-        <div><p id="wht">///</p> I am always eager to learn something new and a huge <p id='red'>#pokemon fan</p> <p id="wht">///</p></div>
+        <div className='txt1'><span id="wht">//</span> I am a <span id='age'>16</span> years old <span id='grn'>front-end web developer</span> and am interested in <span id='grn'>game-dev</span> <span id="wht">//</span></div>
+        <div className='txt1'><span id="wht">/*</span> I am from India and my favourite late night snack is <span id='yellow'>cheese-pizza</span> <span id="wht">*/</span></div>
+        <div className='txt1'><span id="wht">///</span> I am always eager to learn something new and a huge <span id='red'>#pokemon fan</span> <span id="wht">///</span></div>
       </div>
   )
 }
