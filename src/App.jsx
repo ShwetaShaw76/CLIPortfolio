@@ -3,6 +3,7 @@ import './App.css'
 import { useEffect, useState } from 'react'
 import togepi from './assets/togepi.svg'
 import Projects from './Projects.jsx'
+import CLI from './CLI.jsx'
 
 function Header(){
 
@@ -71,6 +72,7 @@ function App() {
       <TogepiImg />
       </div>
       <Projects></Projects>
+      <CLI></CLI>
     </>
   )
 }
