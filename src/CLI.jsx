@@ -33,6 +33,7 @@ function CLI(){
         <>
         <div className="cli">
             <h1 className="hdd">CLI Interface</h1>
+            <p>use "help me" command for the list of commands</p>
                 <div className="txtArea">
                     <div className="start">user@cli:~$ </div>
                     <div className="input">{command}</div>
