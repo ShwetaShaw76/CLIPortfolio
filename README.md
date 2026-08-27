@@ -1,3 +1,5 @@
+![alt text](cliPortfolio.png)
+
 # CLIportfolio
 A dark-themed portfolio website with a CLI interface at the end of the website
 
