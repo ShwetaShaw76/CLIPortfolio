@@ -7,7 +7,9 @@ A dark-themed portfolio website with a CLI interface at the end of the website
 
 It conatins animations and different cli commands.
 
-# Header 
+# About
+
+## Header 
 It is linked with the website and will let access different areas of the website. 
 
 ## Projects
@@ -21,6 +23,22 @@ This is the cli interface you can type commands here and get output
 
 You can just start by typing `help me` command to get a list of commands
 
-The command names are already self-explaratory
+The command names are already self-explaratory. Don't feel shy to try it out for yourself
+
+# TechStack
+
+The project is made entirely in React. 
+Programming Languages used are HTML, CSS, JavaScript
+Specific React Hooks used are useState and useEffect.I don't know other hooks🫡
+
+# How to use website
+
+Its so obvious duh!! just click the link in the github About section🤯
+
+# Inspiration
+
+I once did a ysws( I forgot the name sorry😭) that had a cli interface in its website, I found that really interesting and wanted to try making it myself because it looked really cool 
+So that's how I ended up doing this project
+
 
 
